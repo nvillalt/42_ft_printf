@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nvillalt <nvillalt@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nvillalt <nvillalt@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/29 09:43:28 by nvillalt          #+#    #+#             */
-/*   Updated: 2023/11/02 10:39:31 by nvillalt         ###   ########.fr       */
+/*   Updated: 2023/11/02 12:34:15 by nvillalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,25 @@
 	%X - uppercase hexadecimal
 	%% - percentage symbol */
 
+void	print_types(unsigned int counter, char c, va_list args) // Quizás no char, sino va_list
+{
+	if (c == 'c')
+		ft_putchar(va_arg(args, char));
+	else if (c == 's')
+		ft_putstr(va_arg(args, char *));
+	else if (c == 'd' || c == 'i')
+		ft_putnbr(va_arg(args, int));
+	else if (c == 'x')
+		ft_putbase(va_args(args, unsigned int), 1);
+	else if (c == 'X'
+		ft_putbase(va_args(args, unsigned int), 0));
+	else if (c == 'p')
+		ft_putptr(va_args(args, ));
+}
+
 int	ft_printf(const char *str, ...)
 {
 	va_list			args;
-	char			c;
 	unsigned int	i;
 	unsigned int	counter; // Lo que devuelve printf, a lo mejor se puede unificar con i.
 
@@ -39,11 +54,7 @@ int	ft_printf(const char *str, ...)
 		else if (str[i] == '%')
 		{
 			i++;
-			if (str[i] == 'c')
-			{
-				c = va_arg(args, char);
-				ft_putchar(c);
-			}
+			print_types(counter, &str[i]);
 		}
 		i++;
 	}
