@@ -3,24 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nvillalt <nvillalt@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: nvillalt <nvillalt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/29 09:43:28 by nvillalt          #+#    #+#             */
-/*   Updated: 2023/11/02 12:34:15 by nvillalt         ###   ########.fr       */
+/*   Updated: 2023/11/02 17:45:39 by nvillalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
 /* Implement these conversions:
-	%c - Character (putchar)
-	%s - string (putstr)
-	%p - pointer (hexadecimal base)
-	%d - number (putnbr)
-	%i - number (putnbr) > Same as %d I think
+	%c - Character (putchar) -DONE
+	%s - string (putstr) -DONE
+	%p - pointer (hexadecimal base) UINTPTR_T
+	%d - number (putnbr) -DONE
+	%i - number (putnbr) > Same as %d I think -DONE
 	%u - unsigned decimal (no negatives, more positives)
-	%x - lowercase hexadecimal
-	%X - uppercase hexadecimal
+	%x - lowercase hexadecimal -DONE
+	%X - uppercase hexadecimal -DONE
 	%% - percentage symbol */
 
 void	print_types(unsigned int counter, char c, va_list args) // Quizás no char, sino va_list
@@ -33,10 +33,14 @@ void	print_types(unsigned int counter, char c, va_list args) // Quizás no char,
 		ft_putnbr(va_arg(args, int));
 	else if (c == 'x')
 		ft_putbase(va_args(args, unsigned int), 1);
-	else if (c == 'X'
-		ft_putbase(va_args(args, unsigned int), 0));
+	else if (c == 'X')
+		ft_putbase(va_args(args, unsigned int), 0);
 	else if (c == 'p')
-		ft_putptr(va_args(args, ));
+		ft_putptr(va_args(args, )); // uintptr_t (variable puntero)
+	else if (c == 'u')
+		ft_putunsig();
+	else
+		ft_putchar('%');
 }
 
 int	ft_printf(const char *str, ...)
