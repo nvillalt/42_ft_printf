@@ -6,7 +6,7 @@
 /*   By: nvillalt <nvillalt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/29 09:43:28 by nvillalt          #+#    #+#             */
-/*   Updated: 2023/11/02 10:34:37 by nvillalt         ###   ########.fr       */
+/*   Updated: 2023/11/02 10:39:31 by nvillalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,11 +26,12 @@
 int	ft_printf(const char *str, ...)
 {
 	va_list			args;
+	char			c;
 	unsigned int	i;
 	unsigned int	counter; // Lo que devuelve printf, a lo mejor se puede unificar con i.
 
 	i = 0;
-	va_start();
+	va_start(args, str);
 	while (str[i] != '\0')
 	{
 		if (str[i] != '%')
@@ -40,8 +41,8 @@ int	ft_printf(const char *str, ...)
 			i++;
 			if (str[i] == 'c')
 			{
-				
-				ft_putchar()
+				c = va_arg(args, char);
+				ft_putchar(c);
 			}
 		}
 		i++;
