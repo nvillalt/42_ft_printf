@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nvillalt <nvillalt@student.42madrid>       +#+  +:+       +#+        */
+/*   By: nvillalt <nvillalt@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/05 15:04:35 by nvillalt          #+#    #+#             */
-/*   Updated: 2023/10/06 13:17:10 by nvillalt         ###   ########.fr       */
+/*   Created: 2023/09/24 12:59:43 by nvillalt          #+#    #+#             */
+/*   Updated: 2023/11/03 14:50:18 by nvillalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

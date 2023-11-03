@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nvillalt <nvillalt@student.42madrid>       +#+  +:+       +#+        */
+/*   By: nvillalt <nvillalt@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/05 15:04:54 by nvillalt          #+#    #+#             */
-/*   Updated: 2023/10/06 13:17:25 by nvillalt         ###   ########.fr       */
+/*   Created: 2023/09/26 08:08:41 by nvillalt          #+#    #+#             */
+/*   Updated: 2023/11/03 14:50:08 by nvillalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nvillalt <nvillalt@student.42madrid>       +#+  +:+       +#+        */
+/*   By: nvillalt <nvillalt@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/05 15:07:46 by nvillalt          #+#    #+#             */
-/*   Updated: 2023/10/06 13:21:23 by nvillalt         ###   ########.fr       */
+/*   Created: 2023/09/23 13:33:12 by nvillalt          #+#    #+#             */
+/*   Updated: 2023/11/03 14:52:27 by nvillalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

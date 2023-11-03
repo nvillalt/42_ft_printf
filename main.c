@@ -3,19 +3,20 @@
 
 int	main()
 {
-	//long unsigned int ptr;
-	char			*str = "Hola";
-	//unsigned int	n = 98767;
-	int	num = 0;
+/* 	char	*str = "Hola!";
+	int		num = 60;
+	unsigned int n = -5; */
 
-	//ptr = &str;
-	//printf("%X\n", n);
-	//printf("%ld\n", ptr);
-	num = ft_putptr(str);
+	int	mine;
+	int original;
 
-	printf("--------\n");
+	mine = ft_printf("original: ");
+	printf("\n");
+	original = printf("oriignal: ");
 
-	printf("%p\n", &str);
-	printf("Num: %d\n", num);
+	printf("\n");
+	printf("Mi función: %d", mine);
+	printf("\n------\n");
+	printf("Original: %d", original);
 	return (0);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nvillalt <nvillalt@student.42madrid>       +#+  +:+       +#+        */
+/*   By: nvillalt <nvillalt@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/05 14:29:08 by nvillalt          #+#    #+#             */
-/*   Updated: 2023/10/06 13:14:37 by nvillalt         ###   ########.fr       */
+/*   Created: 2023/09/25 15:46:01 by nvillalt          #+#    #+#             */
+/*   Updated: 2023/10/04 21:44:49 by nvillalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ static char	set_str(long int num)
 }
 
 static char	*fill_str(long int num, int strl, char *str)
-{	
+{
 	int	i;
 
 	i = 0;

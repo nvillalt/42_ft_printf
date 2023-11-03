@@ -6,14 +6,14 @@
 /*   By: nvillalt <nvillalt@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 11:20:38 by nvillalt          #+#    #+#             */
-/*   Updated: 2023/11/03 13:38:51 by nvillalt         ###   ########.fr       */
+/*   Updated: 2023/11/03 14:20:55 by nvillalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include "ft_printf.h"
 
-int	ft_putbase(unsigned int n, int bool)
+int	ft_putbase(unsigned int n, int tf)
 {
 	char	*lowercase;
 	char	*uppercase;
@@ -24,12 +24,12 @@ int	ft_putbase(unsigned int n, int bool)
 	uppercase = "0123456789ABCDEF";
 	if (n > 16)
 	{
-		num_chars += ft_putbase(n / 16, bool);
-		num_chars += ft_putbase(n % 16, bool);
+		num_chars += ft_putbase(n / 16, tf);
+		num_chars += ft_putbase(n % 16, tf);
 	}
 	else
 	{
-		if (bool == 1)
+		if (tf == 1)
 			num_chars += ft_putchar(lowercase[n]);
 		else
 			num_chars += ft_putchar(uppercase[n]);
@@ -60,7 +60,7 @@ int	ft_putptr(void *ptr)
 	uintptr_t	num;
 
 	num_chars = 0;
-	num = &ptr;
+	num = (uintptr_t)ptr;
 	num_chars += write(1, "0x", 2);
 	num_chars += put_hex_ptr(num);
 	return (num_chars);

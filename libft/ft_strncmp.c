@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nvillalt <nvillalt@student.42madrid>       +#+  +:+       +#+        */
+/*   By: nvillalt <nvillalt@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/05 15:08:22 by nvillalt          #+#    #+#             */
-/*   Updated: 2023/10/06 13:22:00 by nvillalt         ###   ########.fr       */
+/*   Created: 2023/09/23 15:06:11 by nvillalt          #+#    #+#             */
+/*   Updated: 2023/11/03 14:52:08 by nvillalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

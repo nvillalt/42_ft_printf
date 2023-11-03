@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nvillalt <nvillalt@student.42madrid>       +#+  +:+       +#+        */
+/*   By: nvillalt <nvillalt@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/05 15:04:01 by nvillalt          #+#    #+#             */
-/*   Updated: 2023/10/06 13:16:41 by nvillalt         ###   ########.fr       */
+/*   Created: 2023/10/01 21:03:05 by nvillalt          #+#    #+#             */
+/*   Updated: 2023/11/03 14:50:35 by nvillalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

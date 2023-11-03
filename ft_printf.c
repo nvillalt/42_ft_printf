@@ -6,16 +6,33 @@
 /*   By: nvillalt <nvillalt@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/29 09:43:28 by nvillalt          #+#    #+#             */
-/*   Updated: 2023/11/03 12:45:52 by nvillalt         ###   ########.fr       */
+/*   Updated: 2023/11/03 15:13:34 by nvillalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	print_types(unsigned int total, char c, va_list args)
+int	check_char(int c, char *arr)
+{
+	int	flag;
+	int	i;
+
+	i = 0;
+	flag = 0;
+	while (arr[i] != '\0')
+	{
+		if (c != arr[i])
+			flag = 0;
+		flag = 1;
+		i++;
+	}
+	return (flag);
+}
+
+static int	print_types(unsigned int total, int c, va_list args)
 {
 	if (c == 'c')
-		total += ft_putchar(va_arg(args, char));
+		total += ft_putchar(va_arg(args, int));
 	else if (c == 's')
 		total += ft_putstr(va_arg(args, char *));
 	else if (c == 'd' || c == 'i')
@@ -38,20 +55,23 @@ int	ft_printf(const char *str, ...)
 	va_list			args;
 	unsigned int	i;
 	unsigned int	total;
+	char			*arr;
 
 	i = 0;
+	arr = "cspdiuxX%";
 	va_start(args, str);
 	while (str[i] != '\0')
 	{
-		if (str[i] != '%')
-			total += ft_putchar(&str[i]);
-		else if (str[i] == '%')
+		if (str[i] == '%' && ft_strchr(arr, (const char)str[i + 1]))
 		{
 			i++;
-			total += print_types(total, &str[i], args);
+			total = print_types(total, (int)str[i], args);
 		}
+	/* OTRA CONDICION PARA ARREGLAR EL % */
+		else
+			total += ft_putchar(str[i]);
 		i++;
 	}
-	total += i;
+	va_end(args);
 	return (total);
 }
