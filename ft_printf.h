@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nvillalt <nvillalt@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nvillalt <nvillalt@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/29 09:44:36 by nvillalt          #+#    #+#             */
-/*   Updated: 2023/11/02 17:25:54 by nvillalt         ###   ########.fr       */
+/*   Updated: 2023/11/03 13:11:27 by nvillalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <stdarg.h>
 # include <unistd.h>
 # include <stdlib.h>
-# include "./libft/libft.h"
+# include <stdint.h>
 
 /* MAIN PRINTF FILE */
 int		ft_printf(const char *str, ...);

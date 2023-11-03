@@ -3,14 +3,19 @@
 
 int	main()
 {
-	unsigned int	n = 98767;
+	//long unsigned int ptr;
+	char			*str = "Hola";
+	//unsigned int	n = 98767;
 	int	num = 0;
 
-	printf("%X\n", n);
-	num = ft_putbase(n, 0);
+	//ptr = &str;
+	//printf("%X\n", n);
+	//printf("%ld\n", ptr);
+	num = ft_putptr(str);
 
-	printf("\n");
+	printf("--------\n");
 
-	printf("%d\n", num);
+	printf("%p\n", &str);
+	printf("Num: %d\n", num);
 	return (0);
 }

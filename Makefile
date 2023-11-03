@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: nvillalt <nvillalt@student.42.fr>          +#+  +:+       +#+         #
+#    By: nvillalt <nvillalt@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/29 09:44:50 by nvillalt          #+#    #+#              #
-#    Updated: 2023/11/02 17:14:18 by nvillalt         ###   ########.fr        #
+#    Updated: 2023/11/03 12:43:11 by nvillalt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,9 @@ CFLAGS = -Wall -Wextra -Werror
 
 AR = ar -rc
 
-SRCS = ft_printf.c ft_printf_utils.c 
+SRCS = ft_printf.c \
+	ft_printf_hex_ptr.c \
+	ft_printf_str_num.c
 
 OBJS = $(SRCS:%.c=%.o)
 
