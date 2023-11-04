@@ -6,7 +6,7 @@
 /*   By: nvillalt <nvillalt@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/29 09:43:28 by nvillalt          #+#    #+#             */
-/*   Updated: 2023/11/04 12:10:08 by nvillalt         ###   ########.fr       */
+/*   Updated: 2023/11/04 21:38:03 by nvillalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,8 +44,8 @@ int	ft_printf(const char *str, ...)
 	va_start(args, str);
 	while (str[i] != '\0')
 	{
-/* 		if (str[i] == '%' && str[i + 1] == '\0')
-			return (-1); */
+		if (str[i] == '%' && str[i + 1] == '\0')
+			return (-1);
 		if (str[i] == '%' && ft_strchr(arr, (const char)str[i + 1]))
 		{
 			i++;

@@ -3,16 +3,16 @@
 
 int	main()
 {
-/* 	char	*str = "Hola!";
+	char	*str = "Hola!";
 	int		num = 60;
-	unsigned int n = -5; */
+	unsigned int n = -5;
 
 	int	mine;
 	int original;
 
-	mine = ft_printf("mine: % %%");
+	mine = ft_printf("mine: %c, %s, %x, %X, %u, %d, %p, %%", str[0], str, num, num, n, num, &str);
 	printf("\n");
-	original = printf("oriignal: % %%");
+	original = printf("mine: %c, %s, %x, %X, %u, %d, %p, %%", str[0], str, num, num, n, num, &str);
 
 	printf("\n");
 	printf("Mi función: %d", mine);
