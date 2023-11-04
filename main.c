@@ -10,9 +10,9 @@ int	main()
 	int	mine;
 	int original;
 
-	mine = ft_printf("original: ");
+	mine = ft_printf("mine: % %%");
 	printf("\n");
-	original = printf("oriignal: ");
+	original = printf("oriignal: % %%");
 
 	printf("\n");
 	printf("Mi función: %d", mine);
