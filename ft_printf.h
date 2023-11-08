@@ -6,7 +6,7 @@
 /*   By: nvillalt <nvillalt@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/29 09:44:36 by nvillalt          #+#    #+#             */
-/*   Updated: 2023/11/04 12:40:46 by nvillalt         ###   ########.fr       */
+/*   Updated: 2023/11/08 15:22:50 by nvillalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 # include <stdarg.h>
 # include <unistd.h>
 # include <stdint.h>
-# include "./libft/libft.h"
 
 /* MAIN PRINTF FILE */
 int		ft_printf(const char *str, ...);

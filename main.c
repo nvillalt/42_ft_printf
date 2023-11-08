@@ -10,9 +10,9 @@ int	main()
 	int	mine;
 	int original;
 
-	mine = ft_printf("mine: %c, %s, %x, %X, %u, %d, %p, %%", str[0], str, num, num, n, num, &str);
+	mine = ft_printf("%%  8");
 	printf("\n");
-	original = printf("mine: %c, %s, %x, %X, %u, %d, %p, %%", str[0], str, num, num, n, num, &str);
+	original = printf("%%  8");
 
 	printf("\n");
 	printf("Mi función: %d", mine);
