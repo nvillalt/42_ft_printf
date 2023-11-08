@@ -6,12 +6,11 @@
 /*   By: nvillalt <nvillalt@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 11:19:20 by nvillalt          #+#    #+#             */
-/*   Updated: 2023/11/03 14:17:14 by nvillalt         ###   ########.fr       */
+/*   Updated: 2023/11/08 19:02:08 by nvillalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include <stdio.h>
 
 int	ft_putchar(int c)
 {
@@ -26,6 +25,11 @@ int	ft_putstr(char *s)
 	int	num_chars;
 
 	num_chars = 0;
+	if (!s)
+	{
+		num_chars += write(1, "(null)", 6);
+		return (num_chars);
+	}
 	while (*s != '\0')
 	{
 		num_chars += write(1, s, 1);
@@ -73,6 +77,3 @@ int	ft_putunsig(unsigned int n)
 		num_chars += ft_putchar(num + '0');
 	return (num_chars);
 }
-/* Due to the recursive nature of the function,
-   it must constantly return to num_chars.
-   The return is 1 and thus it properly adds up. */

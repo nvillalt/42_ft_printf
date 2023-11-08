@@ -6,7 +6,7 @@
 /*   By: nvillalt <nvillalt@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 11:20:38 by nvillalt          #+#    #+#             */
-/*   Updated: 2023/11/03 14:20:55 by nvillalt         ###   ########.fr       */
+/*   Updated: 2023/11/08 17:35:42 by nvillalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	ft_putbase(unsigned int n, int tf)
 	num_chars = 0;
 	lowercase = "0123456789abcdef";
 	uppercase = "0123456789ABCDEF";
-	if (n > 16)
+	if (n >= 16)
 	{
 		num_chars += ft_putbase(n / 16, tf);
 		num_chars += ft_putbase(n % 16, tf);
@@ -44,7 +44,7 @@ static int	put_hex_ptr(uintptr_t ptr)
 
 	num_chars = 0;
 	lowercase = "0123456789abcdef";
-	if (ptr > 16)
+	if (ptr >= 16)
 	{
 		num_chars += put_hex_ptr(ptr / 16);
 		num_chars += put_hex_ptr(ptr % 16);
