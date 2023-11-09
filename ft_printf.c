@@ -6,7 +6,7 @@
 /*   By: nvillalt <nvillalt@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/29 09:43:28 by nvillalt          #+#    #+#             */
-/*   Updated: 2023/11/08 19:02:36 by nvillalt         ###   ########.fr       */
+/*   Updated: 2023/11/09 13:34:57 by nvillalt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ int	ft_printf(const char *str, ...)
 {
 	va_list			args;
 	unsigned int	i;
-	unsigned int	total;
+	int				total;
 	char			*arr;
 
 	i = 0;
